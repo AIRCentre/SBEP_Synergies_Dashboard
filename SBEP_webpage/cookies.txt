@@ -1,4 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-bluepartnership.eu	TRUE	/	FALSE	1999999999	vliz_webc	vliz_webc1
-
