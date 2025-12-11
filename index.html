@@ -285,10 +285,9 @@
   
   <!-- Grid layout: 3 columns x n rows -->
   <!-- Row 1 -->
-  <g class="funding-button" data-country="Horizon Europe" onclick="toggleTheme('Horizon-Europe-kw')" style="cursor: pointer;">
+  <g class="funding-button" data-country="S3" onclick="toggleTheme('S3-kw')" style="cursor: pointer;">
     <rect x="33" y="90" width="165" height="80" fill="#1f9397" stroke="#fff" stroke-width="2" rx="8"/>
-    <text x="115.5" y="117" text-anchor="middle" dominant-baseline="middle" fill="#fff" font-size="24" font-weight="bold">Horizon</text>
-    <text x="115.5" y="143" text-anchor="middle" dominant-baseline="middle" fill="#fff" font-size="24" font-weight="bold">Europe</text>
+    <text x="115.5" y="130" text-anchor="middle" dominant-baseline="middle" fill="#fff" font-size="24" font-weight="bold">S3</text>
   </g>
   
   <g class="funding-button" data-country="RRF" onclick="toggleTheme('RRF-kw')" style="cursor: pointer;">
@@ -302,11 +301,11 @@
   </g>
   
   <!-- Row 2 -->
-  <g class="funding-button" data-country="S3" onclick="toggleTheme('S3-kw')" style="cursor: pointer;">
+  <g class="funding-button" data-country="Horizon Europe" onclick="toggleTheme('Horizon-Europe-kw')" style="cursor: pointer;">
     <rect x="33" y="190" width="165" height="80" fill="#1f9397" stroke="#fff" stroke-width="2" rx="8"/>
-    <text x="115.5" y="230" text-anchor="middle" dominant-baseline="middle" fill="#fff" font-size="24" font-weight="bold">S3</text>
+    <text x="115.5" y="217" text-anchor="middle" dominant-baseline="middle" fill="#fff" font-size="24" font-weight="bold">Horizon</text>
+    <text x="115.5" y="243" text-anchor="middle" dominant-baseline="middle" fill="#fff" font-size="24" font-weight="bold">Europe</text>
   </g>
-  
   
   <g class="funding-button" data-country="EMFAF" onclick="toggleTheme('EMFAF-kw')" style="cursor: pointer;">
     <rect x="403" y="190" width="165" height="80" fill="#1f9397" stroke="#fff" stroke-width="2" rx="8"/>
@@ -612,7 +611,12 @@ body.dark-mode .theme-search:focus {
             <button class="submenu-button2" onclick="toggleSubDescription('Methods')">Methods</button>
             <div id="Methods" class="sub-description2" style="display: none;">
               <p>This dashboard leverages from a collaborative learning process across representatives of EU, member states and regional institutions, both internal and external to the Partnership’s consortium, providing an exchange of frameworks, challenges, lessons learned, good practices, and proposed solutions, resulting in a comprehensive overview of up-to-date information on synergies of resources pertinent to the Partnership. For details about this collaborative work, see “SBEP’s support to capacity building”. </p>
-              <p>Downstream from this collaborative process, this dashboard consolidates this gathered knowledge in an accessible format aiming to support the practical implementation of these synergies. Specifically, we aim to support members of the Partnership Consortium to benefit from an optimal synergy of financial resources available for participants to (co)funded research and innovation (R&I) projects including through leveraging financial streams available in each member state, including: European Structural and Investment Funds (ESIF), the EU Regional Development Fund (ERDF), the European maritime, fisheries and Aquaculture fund (EMFAF), Next generation EU, and other relevant Programmes.</p>
+              <p>Downstream from this collaborative process, this dashboard consolidates this gathered knowledge in an accessible format 
+                aiming to support the practical implementation of these synergies. Specifically, we aim to support members of the Partnership 
+                Consortium to benefit from an optimal synergy of financial resources available for participants to (co)funded research and 
+                innovation (R&I) projects including through leveraging financial streams available in each member state, including the 
+                European Regional Development Fund (ERDF), the European Maritime, Fisheries and Aquaculture fund (EMFAF), other European 
+                Structural and Investment Funds (ESIFs), Next generation EU, and other relevant Programmes.</p>
               <p>The contents presented here include showcasing successful stories on creating funding synergies at national level and explanation of how these funding synergies are put in place from an operational point of view, leveraging support within the partnership’s knowledge-sharing framework. Challenges identified prompt a proposed roadmap for resolution. Our approach emphasizes lessons learned over best practices, owing to the novelty and evolving nature of such practices. </p>
               
             </div>
@@ -634,8 +638,11 @@ body.dark-mode .theme-search:focus {
     <div class="wrap container-fluid">
       <div class="row">
         <div class="col-xs-12">
-          <p>The <span class="commission-link" onclick="toggleCommissionTooltip(event, this)">Commission Notice on Synergies between Horizon Europe (HE) and ERDF<span class="commission-tooltip">External link: <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2022.421.01.0007.01.ENG&toc=OJ%3AC%3A2022%3A421%3AFULL" target="_blank">Click here</a></span></span>
-            functions as a blueprint for synergy modalities applicable across EU programmes beyond HE and ERDF. These modalities include Seal of Excellence, transfers, cumulative funding, co-funded and institutionalised Partnerships, combined funding (teaming), and upstream/downstream synergies. </p>
+          <p>The <span class="commission-link" onclick="toggleCommissionTooltip(event, this)">Commission Notice on Synergies 
+            between Horizon Europe (HE) and ERDF<span class="commission-tooltip adaptive">External 
+              link: <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2022.421.01.0007.01.ENG&toc=OJ%3AC%3A2022%3A421%3AFULL" 
+              target="_blank">https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.C_.2022.421.01.0007.01.ENG&toc=OJ%3AC%3A2022%3A421%3AFULL</a>
+            </span></span> functions as a blueprint for synergy modalities applicable across EU programmes beyond HE and ERDF. These modalities include Seal of Excellence, transfers, cumulative funding, co-funded and institutionalised Partnerships, combined funding (teaming), and upstream/downstream synergies. </p>
 
           <div class="submenu-container">
             <button class="submenu-button" onclick="toggleSubDescription('seal-of-excellence')">Seal of Excellence</button>
@@ -648,11 +655,13 @@ body.dark-mode .theme-search:focus {
 
           <div class="tab-content-container">
             <div id="seal-of-excellence" class="sub-description" style="display: none;">
-              <p>Given the Partnership's limitations in funding all R&I project-worthy proposals, tools such as the <span class="commission-link" onclick="toggleCommissionTooltip(event, this)">Seal of Excellence<span class="commission-tooltip">External link: <a href="https://research-and-innovation.ec.europa.eu/funding/funding-opportunities/seal-excellence_en" target="_blank">Click here</a></span></span> offer a pipeline for high-quality proposals. The Seal of Excellence is a quality label awarded to proposals submitted under a competitive call that have met specific excellence criteria but could not be funded due to budgetary limitations. It enhances their visibility and facilitates identification for receiving alternative support, either from EU or national funding sources.</p>              
+              <p>Given the Partnership's limitations in funding all R&I project-worthy proposals, tools such as  
+                <span class="commission-link" onclick="toggleCommissionTooltip(event, this)">the Seal of Excellence<span class="commission-tooltip adaptive">External link: <a href="https://research-and-innovation.ec.europa.eu/funding/funding-opportunities/seal-excellence_en" target="_blank">https://research-and-innovation.ec.europa.eu/funding/funding-opportunities/seal-excellence_en</a></span></span>
+                  offer a pipeline for high-quality proposals. The Seal of Excellence is a quality label awarded to proposals submitted under a competitive call that have met specific excellence criteria but could not be funded due to budgetary limitations. It enhances their visibility and facilitates identification for receiving alternative support, either from EU or national funding sources.</p>              
             </div>
 
             <div id="transfers" class="sub-description" style="display: none;">
-              <p>The transfer between cohesion policy funds and Horizon Europe is a new synergy modality available in the 2021-2027 programming period. Transfers give an opportunity to 
+              <p>The transfer between Cohesion Policy funds and Horizon Europe is a new synergy modality available in the 2021-2027 programming period. Transfers give an opportunity to 
                 <ul>
                 <li><p>strengthen participation of MS in HE where it has been traditionally low and to improve their success rate;</p></li>
                 <li><p>boost projects in areas identified as priorities through smart specialization;</p></li>
@@ -666,8 +675,15 @@ body.dark-mode .theme-search:focus {
             </div>
 
             <div id="synergies-in-european-partnerships" class="sub-description" style="display: none;">
-              <p><span class="commission-link" onclick="toggleCommissionTooltip(event, this)">European Partnerships<span class="commission-tooltip">External link: <a href="https://research-and-innovation.ec.europa.eu/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-europe/european-partnerships-horizon-europe_en" target="_blank">Click here</a></span></span> with Member States participation play a vital role in strengthening the European research landscape. They foster cross-border collaboration, align research and innovation agendas, enhance skills, and boost the absorption capacity of European businesses, while further structuring the European Research Area. A central aim of these Partnerships is to achieve scientific, managerial, and financial integration of national research programmes in their respective domains.</p>              
-             <p>Partnerships, including SBEP, are key drivers for synergies between funding schemes, by bringing in and coordinating the use of resources available from EU and national instruments, programmes and funds. It is possible, for instance, to use European Structural an Investment Funds – ESIF (EAFRD, ESF, ERDF, etc.) – funds in the context of <span class="commission-link" onclick="toggleCommissionTooltip(event, this)">co-funded Partnerships<span class="commission-tooltip">External link: <a href="https://www.era-learn.eu/partnerships-in-a-nutshell/type-of-networks/co-funded-european-partnerships" target="_blank">Click here</a></span></span>. Furthermore, collaboration between a Partnership and potential alternative  
+              <p><span class="commission-link" onclick="toggleCommissionTooltip(event, this)">European Partnerships<span 
+                class="commission-tooltip adaptive">External link: <a 
+                href="https://research-and-innovation.ec.europa.eu/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-europe/european-partnerships-horizon-europe_en" 
+                target="_blank">https://research-and-innovation.ec.europa.eu/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-europe/european-partnerships-horizon-europe_en</a></span></span> with Member States participation play a vital role in strengthening the European research landscape. They foster cross-border collaboration, align research and innovation agendas, enhance skills, and boost the absorption capacity of European businesses, while further structuring the European Research Area. A central aim of these Partnerships is to achieve scientific, managerial, and financial integration of national research programmes in their respective domains.</p>              
+             
+                <p>Partnerships, including SBEP, are key drivers for synergies between funding schemes, by bringing in and coordinating the 
+                  use of resources available from EU and national instruments, programmes and funds. It is possible, for instance, to use 
+                  European Structural an Investment Funds – ESIFs (EAFRD, ESF, ERDF, etc.) – in the context of 
+                  <span class="commission-link" onclick="toggleCommissionTooltip(event, this)">co-funded Partnerships<span class="commission-tooltip adaptive">External link: <a href="https://www.era-learn.eu/partnerships-in-a-nutshell/type-of-networks/co-funded-european-partnerships" target="_blank">https://www.era-learn.eu/partnerships-in-a-nutshell/type-of-networks/co-funded-european-partnerships</a></span></span>. Furthermore, collaboration between a Partnership and potential alternative  
               funding streams may also extend to engagement with the management authorities overseeing the ESIFs. 
             </p>
             <table class="custom-partnership-table" style="background-color: #33cccc; border-radius: 8px; overflow: hidden; width: 100%; margin: 20px 0;">
@@ -692,8 +708,15 @@ body.dark-mode .theme-search:focus {
             </div>
 
             <div id="combined-funding" class="sub-description" style="display: none;">
-              <p>Combined funding from a national, regional, EU or private source can take the form of the form of Teaming actions, or complementary projects. It may support for example the creation or modernisation of a centre of excellence in a widening country by teaming it up with a leading research institution (advanced partner) in a different country. Teaming actions are designated as a synergy action be the HE working programme and are expected to become an influential and meaningful bridge particularly between S3 and excellence in R&I, thereby strengthening the ERA. As such, teaming actions help maximise the benefits of R&I for society, the environment, and the economy, while reducing disparities among Member States and advancing EU goals.</p>              
-            <p>The ERDF programme supports R&D projects that complement HE, albeit with a different set of eligible costs. The HE proposal must include a clear description of the complementary project supported by the ERDF or other funding sources. </p>
+              <p>Combined funding from a national, regional, EU or private source can take the form of the form of Teaming actions, or 
+                complementary projects. It may support for example the creation or modernisation of a centre of excellence in a widening 
+                country by teaming it up with a leading research institution (advanced partner) in a different country. 
+                Teaming actions are designated as a synergy action be the Horizon Europe working programme and are expected to become an 
+                influential and meaningful bridge particularly between S3 and excellence in R&I, thereby strengthening the ERA. 
+                As such, teaming actions help maximise the benefits of R&I for society, the environment, and the economy, while reducing 
+                disparities among Member States and advancing EU goals.</p>              
+            <p>The ERDF programme supports R&D projects that complement Horizon Europe, albeit with a different set of eligible costs. The Horizon Europe 
+              proposal must include a clear description of the complementary project supported by the ERDF or other funding sources. </p>
             </div>
 
             <div id="upstream-and-downstream-synergies" class="sub-description" style="display: none;">
@@ -727,8 +750,8 @@ body.dark-mode .theme-search:focus {
           <div class="submenu-container">
             <button class="submenu-button" onclick="toggleSubDescription('JTC')">Joint Transnational Co-Funded Calls (JTCs)</button>
             <button class="submenu-button" onclick="toggleSubDescription('Capacity')">Capacity building</button>
-            <button class="submenu-button" onclick="toggleSubDescription('Additional')">Additional Activities</button>
-            <button class="submenu-button" onclick="toggleSubDescription('Proposed_solution')">Proposed Funding Solution</button>
+            <button class="submenu-button" onclick="toggleSubDescription('Additional')">Additional activities</button>
+            <button class="submenu-button" onclick="toggleSubDescription('Proposed_solution')">Proposed funding solution</button>
           </div>
 
           <div class="tab-content-container">
@@ -758,7 +781,9 @@ body.dark-mode .theme-search:focus {
             </div>
 
             <div id="Capacity" class="sub-description" style="display: none;">
-              <p>SBEP has dedicated an entire Work Package to supporting funding streamlining by information sharing and supporting additional activities beyond competitive calls. Concerning information provision, the Partnership has undertaken the following actions:</p>
+              <p>SBEP has dedicated an entire Work Package to supporting funding streamlining by information sharing and supporting 
+                additional activities beyond competitive calls. Concerning the provision of information, the Partnership has undertaken 
+                the following actions:</p>
             
                <ul>
                 <li><p>Analysis of several national and EU programmes that would be eligible for co-financing the institutions of the Partnership, improving synergies to reduce fragmentation and maximise the impact of research activities. 
@@ -768,20 +793,20 @@ body.dark-mode .theme-search:focus {
                 <li><p>Dedicated task on uptake of projects results;</p></li>
                 <li><p>Direct contacts with partners and funding providers from various MS and AC, and the Commission (including e.g., DG MARE) to obtain specific information on available funding streams and their implementation;</p></li>
                 <li><p>Widening roadmap leading to the engagement of one regional authority (Emilia Romagna Region, Italy) in the Partnership Consortium as a funding organization contributing through Structural Funds;</p></li>
-                <li><p>Organisation of contents into THIS DASHBOARD.</p></li>
+                <li><p>Organisation of contents into this dashboard.</p></li>
               </ul>
              
             </div>
 
             <div id="Additional" class="sub-description" style="display: none;">
-              <p>“Additional Activities” in the context of SBEP and other European Partnerships refer to any activity that is distinct from and complements the financial support to third parties/transnational competitive calls, i.e. typically “in-house activities”.</p>       
+              <p>“Additional activities” in the context of SBEP and other European Partnerships refer to any activity that is distinct from and complements the financial support to third parties/transnational competitive calls, i.e. typically “in-house activities”.</p>       
                 
               <p>Beside the launch of joint transnational calls for proposals, the Partnership is mandated to implement additional activities, including by mobilizing contributions different from in cash, to ensure reaching the strategic objectives of the Partnership. 
                 The implementation of such actions outside competitive calls will require specific technical advice and relevant capacity to foster long-term utilisation and integration of the national implementation dimensions.</p>
 
                 <p>
                   In response, SBEP carried out an analysis on concrete options regarding the availability and in-kind involvement of infrastructures and other existing structured initiatives. This resulted, from the 2nd cycle of the Partnership, in the implementation 
-                  of three new sub-taks to deploys this contribution, each with a specific focus on aligning 
+                  of three new sub-tasks to deploys this contribution, each with a specific focus on aligning 
                   
                   <ol type="1">
                     <li><p>thematic annual programming (TAP),</p></li>
@@ -794,6 +819,8 @@ body.dark-mode .theme-search:focus {
 
             <div id="Proposed_solution" class="sub-description" style="display: none;">
               
+<p>Here we present an RDI co-funding solution envisaged for the period 2028-2034.</p>
+
                 <p>The Commission communication on Europe's 2040 climate target recognizes the need to invest in the research and demonstration, coordinating the EU and national R&I efforts, and strengthening efforts to bring innovations to the 
                   market and to scale them up. In this respect, the Commission communication underlines the need of further simplification throughout EU Programmes. EU Financial Regulation is needed for offering true one-stop shops for finance 
                   and funding opportunities, which would allow for pooling of resources, and accelerated and easier access to funds, eventually combining them with grants, reducing the number of ways to access support.</p>
@@ -941,7 +968,7 @@ body.dark-mode .theme-search:focus {
 
 <p>Member States determine how to leverage multiple funding streams for co-financing research projects. However, consistently identifying the most suitable mechanisms for co-funding organizations in collaborative projects alongside other entities is a major challenge.</p>
 
-  <p>Although guidelines are available in the Hõrizon Europe regulation, such as the provision of processes concerning ERDF in the HE Regulation, provided by the EC in 2022, the current EU regulation framework (CPR and fund specific regulations) does not establish any 
+  <p>Although guidelines are available in the Horizon Europe regulation, such as the provision of processes concerning ERDF in the HE Regulation, provided by the EC in 2022, the current EU regulation framework (CPR and fund specific regulations) does not establish any 
     derogation to use EU funds in international R&D&I joint funding calls.</p>
   
     <p>On the practical side, managing EU contributions from Horizon Europe funding alongside national EU co-funded programmes introduces significant complexities, primarily due to double reporting requirements. National/regional 
@@ -970,7 +997,7 @@ body.dark-mode .theme-search:focus {
 
 </div>
 
-<button class="project-button" onclick="toggleDescription('S3-section')"> <h3>S3</h3></button>
+<button class="project-button" onclick="toggleDescription('S3-section')"> <h3>S3: Smart Specialization Strategy</h3></button>
 <div id="S3-section" class="project-description" style="display: none;">
   <span style="position:absolute; left:-9999px;">S3-kw</span>
   <section class="S3-section">
@@ -1006,7 +1033,7 @@ body.dark-mode .theme-search:focus {
             </p>
 
             <p>
-              <strong>DG REGIO</strong> manages the EU Cohesion Policy Funds (ERDF, CF, ESF+, JTF). For the <span class="commission-link" onclick="toggleCommissionTooltip(event, this)">Cohesion Policy<span class="commission-tooltip">External link: <a href="https://ec.europa.eu/regional_policy/policy/what/investment-policy_en" target="_blank">Click here</a></span></span>, the Smart Specialisation Strategy is the reference; thus, investments must meet its prescribed criteria.
+              <strong>DG REGIO</strong> manages the EU Cohesion Policy Funds (ERDF, CF, ESF+, JTF). For the <span class="commission-link" onclick="toggleCommissionTooltip(event, this)">Cohesion Policy<span class="commission-tooltip adaptive">External link: <a href="https://ec.europa.eu/regional_policy/policy/what/investment-policy_en" target="_blank">https://ec.europa.eu/regional_policy/policy/what/investment-policy_en</a></span></span>, the Smart Specialisation Strategy is the reference; thus, investments must meet its prescribed criteria.
             </p>
             
             <p>
@@ -1050,9 +1077,9 @@ body.dark-mode .theme-search:focus {
                         <li>Synergies with Horizon Europe are possible by:</li>
                         <ul>
                         <li>A strategic approach (building on smart specialization strategy)</li>
-                        <li>A concrete combination of fundings (bringing together HE and other funds to the same project, including ERDF, ESF+, EMFAF and EAFRD)</li>
+                        <li>A concrete combination of fundings (bringing together Horizon Europe and other funds to the same project, including ERDF, ESF+, EMFAF and EAFRD)</li>
                         </ul>
-                        <li>Managing authorities from MS may decide to directly provide support from ERDF, EMFAF, or other funds to operations selected under a programme co-funded by HE (such as the co-funded SBEP or other Institutionalised European Partnerships)</li>
+                        <li>Managing authorities from MS may decide to directly provide support from ERDF, EMFAF, or other funds to operations selected under a programme co-funded by Horizon Europe (such as the co-funded SBEP or other Institutionalised European Partnerships)</li>
                       </ul>
                     </div>
                   </th>
